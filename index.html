@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <div><textarea name="contador" id="contador1" cols="30" rows="10" placeholder="Ingrese caracteres aquí" > </textarea></div>
+    <div><button id="boton"> Contador de caracteres </button></div>
+    
+    <script>
+    var boton = document.getElementById('boton')
+
+     boton.addEventListener('click', function(e) {
+         const target = e.target;
+         const cantidadCaracteres = contador1.value.length
+
+         boton= alert(cantidadCaracteres)
+     });
+    </script>    
+
+</body>
+</html>
